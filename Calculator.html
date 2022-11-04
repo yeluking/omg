@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <p>계산기</p>
+
+    <table bgColor=FFE4E1 border=1>
+      <form name=Calc>
+        <tbody>
+          <tr>
+            <td align=center> <input size=16 name=input>
+              <br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input onclick="Calc.input.value += '1'" type=button value="  1  " name=one>
+              <input onclick="Calc.input.value += '2'" type=button value="  2  " name=two>
+              <input onclick="Calc.input.value += '3'" type=button value="  3  " name=three>
+              <input onclick="Calc.input.value += ' + '" type=button value="  +  " name=plus>
+              <BR>
+              <input onclick="Calc.input.value += '4'" type=button value="  4  " name=four>
+              <input onclick="Calc.input.value += '5'" type=button value="  5  " name=five>
+              <input onclick="Calc.input.value += '6'" type=button value="  6  " name=six>
+              <input onclick="Calc.input.value += ' - '" type=button value="  -  " name=minus>
+              <BR>
+              <input onclick="Calc.input.value += '7'" type=button value="  7  " name=seven>
+              <input onclick="Calc.input.value += '8'" type=button value="  8  " name=eight>
+              <input onclick="Calc.input.value += '9'" type=button value="  9  " name=nine>
+              <input onclick="Calc.input.value += ' * '" type=button value="  x  " name=times>
+              <BR>
+              <input onclick="Calc.input.value = ''" type=button value="  c  " name=clear>
+              <input onclick="Calc.input.value += '0'" type=button value="  0  " name=zero>
+              <input onclick="Calc.input.value = eval(Calc.input.value)" type=button value="  =  " name=DoIt>
+              <input onclick="Calc.input.value += ' / '" type=button value="  /  " name=div>
+            </td>
+          </tr>
+        </tbody>
+      </form>
+    </table>
+
+  </body>
+
+</html>
